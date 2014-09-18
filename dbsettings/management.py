@@ -35,4 +35,6 @@ def handler(sender, **kwargs):
         mk_permissions([permission], app_label, 0)
 
 
-post_syncdb.connect(handler)
+# HACK: connecting this signals produces an unexpected error
+# https://code.djangoproject.com/ticket/23519
+# post_syncdb.connect(handler)
