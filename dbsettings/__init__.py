@@ -1,2 +1,1 @@
-from dbsettings.values import *  # NOQA
-from dbsettings.group import *  # NOQA
+default_app_config = 'dbsettings.apps.CoreConfig'
